@@ -32,6 +32,12 @@ jobs:
           forge fmt --check
         id: fmt
 
+
+      - name: Install
+        run: |
+          npm install
+        id: npmi
+
       - name: Run Forge build
         run: |
           forge build --sizes
