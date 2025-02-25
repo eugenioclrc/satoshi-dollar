@@ -177,7 +177,7 @@ Deployment and Setup
 
 1.  **Deploy SatoshiDollar Contract**:
 
-    -   Deploy `SatoshiDollar.sol` with the Manager contract address as the _manager parameter.
+    -   Deploy `SatoshiDollar.sol` w.
 
 2.  **Deploy Manager Contract**:
 
@@ -193,6 +193,7 @@ Deployment and Setup
 
     -   Ensure the oracle provides accurate BTC/USD price data in the expected format.
 
+4. **Transfer ownership of SatoshiDollar**: Transfer Ownership of the SatoshiDollar contract to the Manager contract.
 * * * * *
 
 Usage Examples

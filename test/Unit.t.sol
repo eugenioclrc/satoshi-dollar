@@ -25,12 +25,10 @@ contract MicroStableTest is Test {
     function setUp() public {
         weth = new WETH();
         // Predict manager's address
-        address predictedManagerAddress = vm.computeCreateAddress(address(this), vm.getNonce(address(this)) + 1);
 
-        satoshiDollar = new SatoshiDollar(predictedManagerAddress);
+        satoshiDollar = new SatoshiDollar();
         manager = new Manager(address(weth), address(satoshiDollar), oracle);
-        //satoshiDollar.setManager(address(manager));
-        assertEq(predictedManagerAddress, address(manager));
+        satoshiDollar.transferOwnership(address(manager));
 
         // setup price is 2000$ per ETHER
         vm.mockCall(oracle, abi.encodeWithSelector(IOracle.latestAnswer.selector), abi.encode(2000e8));

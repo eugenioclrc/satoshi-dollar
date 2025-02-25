@@ -13,14 +13,9 @@ contract CounterScript is Script {
         address WBTC = vm.envOr("WBTC", 0xb4255533Ad74A25A83d17154cB48A287E8f6A811);
         // https://data.chain.link/feeds/ethereum/mainnet/btc-usd
         address oracle = vm.envOr("oracle", 0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c);
-
-        // Predict manager's address
-        address predictedManagerAddress = vm.computeCreateAddress(msg.sender, vm.getNonce(address(this)) + 1);
-
-        SatoshiDollar satoshiDollar = new SatoshiDollar(predictedManagerAddress);
+        SatoshiDollar satoshiDollar = new SatoshiDollar();
         Manager manager = new Manager(address(WBTC), address(satoshiDollar), oracle);
-
+        satoshiDollar.transferOwnership(address(manager));
         vm.stopBroadcast();
-        require(predictedManagerAddress == address(manager), "deployment address error");
     }
 }
