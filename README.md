@@ -263,12 +263,6 @@ Future Improvements
 
 ### ROOTSTOCK Deployment addresses
 
-- Oracle address: 
-- SatoshiDollar address:
-- Manager address:
-
-
-
-
-
-
+- Oracle address: [0x8f9895491b38b6b9b21d18d21998ce55dc933988](https://explorer.testnet.rootstock.io/address/0x8f9895491b38b6b9b21d18d21998ce55dc933988)
+- SatoshiDollar address: [0xbcdb8269e80fc67dc6f605f5be85895801ccd1ad](https://explorer.testnet.rootstock.io/address/0xbcdb8269e80fc67dc6f605f5be85895801ccd1ad)
+- Manager address: []
