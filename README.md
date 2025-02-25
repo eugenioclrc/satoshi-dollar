@@ -7,6 +7,21 @@ Most of this work is inspired by the `MicroStable` project: https://www.youtube.
 
 * * * * *
 
+## Index
+
+1. [Project Description](#project-description)
+2. [Architecture Overview](#architecture-overview)
+3. [Features](#features)
+4. [How It Works](#how-it-works)
+5. [Liquidation Mechanism](#liquidation-mechanism)
+6. [Oracle Usage](#oracle-usage)
+7. [Security Considerations](#security-considerations)
+8. [Technical Details](#technical-details)
+9. [Deployment and Setup](#deployment-and-setup)
+10. [Usage Examples](#usage-examples)
+11. [Future Improvements](#future-improvements)
+12. [Tracks](#tracks)
+
 Project Description
 -------------------
 
@@ -234,3 +249,25 @@ Future Improvements
 -   **Oracle Redundancy**: Integrate multiple oracles or a decentralized oracle network (e.g., Chainlink) for greater reliability.
 
 -   **User Interface**: Develop a front-end for easier interaction with the system.
+
+* * * * *
+
+## Tracks
+
+### BOB Deployment addresses
+
+- Oracle address: [0x26E0974891FA041fc4209Db62806E24CcC6D46A8](https://bob-sepolia.explorer.gobob.xyz/address/0x26E0974891FA041fc4209Db62806E24CcC6D46A8)
+- SatoshiDollar address: [0x42Cbe837CB49EF7583214876DCB37224bc8824FF](https://bob-sepolia.explorer.gobob.xyz/address/0x42Cbe837CB49EF7583214876DCB37224bc8824FF)
+- Manager address: [0x179A66cbA3FE8c44d63562AfD2524725c44BA372](https://bob-sepolia.explorer.gobob.xyz/address/0x179A66cbA3FE8c44d63562AfD2524725c44BA372)
+
+### ROOTSTOCK Deployment addresses
+
+- Oracle address: 
+- SatoshiDollar address:
+- Manager address:
+
+
+
+
+
+
