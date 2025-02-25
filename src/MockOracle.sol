@@ -10,6 +10,10 @@ interface IOracle {
 contract MockOracle is Ownable {
     uint256 public price;
 
+    constructor() {
+        _setOwner(msg.sender);
+    }
+
     function setPrice(uint256 _price) public onlyOwner {
         price = _price;
     }
